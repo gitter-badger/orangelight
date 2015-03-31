@@ -533,6 +533,9 @@
    <field name="text" type="text" indexed="true" stored="false" multiValued="true"/>
    <field name="title_l" type="title_l" indexed="true" stored="false" multiValued="true"/>   
    <field name="title_t" type="text" indexed="true" stored="false" multiValued="true"/>
+
+      <!-- required for SolrCloud -->
+   <field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/>
    
    <!-- these display fields are NOT multi-valued -->
    <field name="marc_display" type="string" indexed="false" stored="true" multiValued="false"/>
